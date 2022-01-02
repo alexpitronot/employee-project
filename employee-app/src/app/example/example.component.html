@@ -3,12 +3,14 @@ Today is: <p>{{today | date}}</p>
 Full date is: <p>{{today | date:'fullDate'}}</p> 
 The time is: <p>{{today | date:'shortTime':'GMT+2'}}</p>
 System currency is: <p>{{curr | currency}}</p>
-Local currency is: <p>{{curr | currency: 'ILS'}}</p>
+Local currency is: <p>{{curr | currency: 'ILS':'symbol':'2.1-2'}}</p>
 Local currency is: <p>{{curr | currency: 'Shekel ' | uppercase}}</p>
 Pi number with no specified formatting: <p>{{pi | number}}</p>   
 Pi number with digitsInfo parameter specified: <p>{{pi | number:'2.1-10'}}</p>
-Pi as percent: <p>{{pi | percent}}</p>
+Pi as percent: <p>{{pi | percent:'2.1-2'}}</p>
+Employee without json format: <p>{{employee}}</p>
 Employee in json format: <p>{{employee | json}}</p>
+Employee in json format: <p>{{employee}}</p>
 Worker details: (<span>{{worker | json}})</span>
 <ul>
     <li *ngFor="let i of worker | slice:0:3">{{i}}</li>
