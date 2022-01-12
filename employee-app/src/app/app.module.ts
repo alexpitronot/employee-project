@@ -36,7 +36,7 @@ import { ExampleComponent } from './example/example.component'; //*
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [],
+  providers: [InMemoryDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

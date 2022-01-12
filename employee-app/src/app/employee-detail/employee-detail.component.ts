@@ -25,7 +25,7 @@ export class EmployeeDetailComponent implements OnInit {
   @Input() employee?: Employee;
 
   getEmployee(): void {
-   const id = Number(this.route.snapshot.paramMap.get('id'));
+    const id = Number(this.route.snapshot.paramMap.get('id'));
     this.employeeService.getEmployee(id) //get employees detials from service
     .subscribe(employee => this.employee = employee);
    }

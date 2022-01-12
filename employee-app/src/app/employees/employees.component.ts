@@ -3,8 +3,8 @@ import { Employee } from '../employee';
 //import {EMPLOYEES } from '../list-employees';
 import { EmployeeService } from '../employee.service';
 import { MessageService } from '../message.service';
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
+//import { ActivatedRoute } from '@angular/router';
+//import { Location } from '@angular/common';
 
 
 @Component({
@@ -26,10 +26,8 @@ export class EmployeesComponent implements OnInit {
   this.messageService.add(`Employee Component message: Selected employee id=${employee.id}`);
 }
   
-constructor(
-  private route: ActivatedRoute,
-  private employeeService: EmployeeService,
-  private location: Location,
+constructor(  
+  private employeeService: EmployeeService,  
   private messageService: MessageService
 ) {}
 
