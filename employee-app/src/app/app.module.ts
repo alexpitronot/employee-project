@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms'; //forms
 import { FooterComponent } from './footer/footer.component'; //*
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component'; //*
 import { MessagesComponent } from './messages/messages.component'; //*
-import { AppRoutingModule } from './app-routing.module'; //*
+import { AppRoutingModule } from './app-routing.module'; //routing module
 import { DashboardComponent } from './dashboard/dashboard.component'; //*
 import { EmployeesRoutingComponent } from './employees-routing/employees-routing.component'; //*
 import { HttpClientModule } from '@angular/common/http'; //routing
