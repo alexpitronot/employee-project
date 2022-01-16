@@ -77,7 +77,7 @@ export class EmployeeService {
 
     addEmployee(employee: Employee): Observable<Employee> {
       return this.http.post<Employee>(this.employeesUrl, employee, this.httpOptions).pipe(
-        tap((newEmployee: Employee) => this.log(`added Employee w/ id=${newEmployee.id}`)),
+        tap((newEmployee: Employee) => this.log(`added Employee with id=${newEmployee.id}`)),
         catchError(this.handleError<Employee>('addEmployee'))
       );
     }
